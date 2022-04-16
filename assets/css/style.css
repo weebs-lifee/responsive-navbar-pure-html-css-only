@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: poppins, sans-serif;
+  }
+/* Header */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/banner-1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    background:transparent;
+    border: 1px solid #b6b2b2;;
+    font-size: 13px;
+    position: relative;
+    padding: 12px 45px;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: .5s;
+}
+
+.header-btn:hover {
+    color: black;
+    background-color: #ffff;
+    cursor: pointer;
+}
+  
+.nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    padding: 5px 10px 10px 10px;
+    font-weight: 600;
+    
+}
+
+.nav > .nav-header > .nav-title a  {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 30px;
+    font-size: 25px;
+
+
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: #0E2431;
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+.text-box {
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: poppins, sans-serif;
+
+}
+
+.text-box h1 {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.text-box p {
+    font-weight: 400px;
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color:#fff;
+}
+
+.text-box p span {
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .header {
+        margin-top: 10px;
+    }
+    .nav {
+        background-color: #0E2431;
+        height: 80px;
+        margin-top: -10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+        position: relative;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .nav > .nav-btn > label > span:hover {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+        position: relative;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .nav > .nav-header > .nav-title {
+        padding-top: 7px;
+    }
+
+    .nav > .nav-header > .nav-title a {
+        font-size: 25px;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #0E2431;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .nav > .nav-links > a:hover {
+        background-color: #16394d;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(40vh - 50px);
+        overflow-y: auto;
+    }
+
+    .text-box h1 {
+        font-size: 25px;
+    }
+
+    .text-box p {
+        font-size: 12px;
+    }
+
+    .text-box a {
+        font-size: 10px;
+    }
+
+    .header-btn {
+        padding: 10px 20px;
+    }
+
+}
+
+/* Footer */
+
+.footer {
+    background-color: #0E2431;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.footer p, a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffff;
+}
